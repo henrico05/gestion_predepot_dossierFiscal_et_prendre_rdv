@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Tiny5&display=swap');
+@import "tailwindcss";
+
+
+:root {
+	--bg: #f5f6f8;
+	--card: #ffffff;
+	--text: #2b2d42;
+	--text-muted: #6b7280;
+	--border: #e5e7eb;
+	
+	--sidebar: #ffffff;
+	--titlebar: #1B2CC1;
+	
+	--primary: #1B2CC1;
+	--hover: #f3f4f6;
+}
+
+
+@theme {
+	--color-primary: #1B2CC1;
+	--color-secondary: #3f37c9;
+	--color-accent: #4895ef;
+	
+	--color-danger: #dc2626;
+	--color-warning: #f59e0b;
+	--color-success: #059669;
+	
+	--color-dark: #1e1e2f;
+	--color-light: #f5f6f8;
+	
+	--color-textdark: #2b2d42;
+	--color-textlight: #f2f4f8;
+	
+	--color-brand: #1d4edb;
+	--color-ink: #374151;
+	--color-surface: #f3f4f6;
+	
+	--font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+	--font-calculator-dots: 'Doto';
+	
+	/* Génère la classe 'font-calculator-pixel' */
+	--font-calculator-pixel: 'Tiny5';
+}
+
+body {
+	font-family: 'Inter', system-ui, sans-serif;
+	/*@apply bg-slate-50 text-slate-800;*/
+}
+
+/* Scrollbar custom */
+::-webkit-scrollbar {
+	width: 6px;
+	height: 6px;
+}
+::-webkit-scrollbar-track {
+	background: transparent;
+}
+::-webkit-scrollbar-thumb {
+	@apply bg-slate-300 rounded-full;
+}
+
+/* ========== Toast moderne ========== */
+.modern-toast {
+	border-radius: 14px !important;
+	box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.18) !important;
+	font-family: 'Inter', system-ui, -apple-system, sans-serif !important;
+	border: none !important;
+	padding: 14px 16px !important;
+	min-height: 64px !important;
+	backdrop-filter: blur(8px);
+}
+
+.modern-toast-body {
+	font-size: 14px !important;
+	font-weight: 500 !important;
+	line-height: 1.4 !important;
+	padding-left: 6px !important;
+}
+
+/* Progress bar plus fine et colorée */
+.modern-progress {
+	height: 3px !important;
+	background: rgba(255, 255, 255, 0.35) !important;
+}
+
+/* === Types de toast === */
+.Vue-Toastification__toast--success {
+	background: linear-gradient(135deg, #10b981, #059669) !important;
+	color: white !important;
+}
+
+.Vue-Toastification__toast--error {
+	background: linear-gradient(135deg, #ef4444, #dc2626) !important;
+	color: white !important;
+}
+
+.Vue-Toastification__toast--warning {
+	background: linear-gradient(135deg, #f59e0b, #d97706) !important;
+	color: white !important;
+}
+
+.Vue-Toastification__toast--info {
+	background: linear-gradient(135deg, #3b82f6, #2563eb) !important;
+	color: white !important;
+}
+
+/* Icône */
+.Vue-Toastification__icon {
+	margin-right: 10px !important;
+	width: 22px !important;
+	height: 22px !important;
+}
+
+/* Bouton fermer */
+.Vue-Toastification__close-button {
+	color: rgba(255, 255, 255, 0.85) !important;
+	opacity: 0.8;
+	font-size: 16px !important;
+	font-weight: 600;
+}
+
+.Vue-Toastification__close-button:hover {
+	opacity: 1;
+	color: white !important;
+}
+
+/* Animation d'entrée plus douce (optionnel) */
+.Vue-Toastification__bounce-enter-active {
+	animation-name: toast-bounce-in;
+}
+
+@keyframes toast-bounce-in {
+	0% {
+		transform: translate3d(40px, 0, 0) scale(0.95);
+		opacity: 0;
+	}
+	60% {
+		transform: translate3d(-6px, 0, 0) scale(1.02);
+		opacity: 1;
+	}
+	100% {
+		transform: translate3d(0, 0, 0) scale(1);
+	}
+}
+
+/* Mode sombre (si tu veux adapter) */
+.dark .modern-toast {
+	box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.45) !important;
+}

@@ -1,0 +1,260 @@
+.
+├── Backend
+│   ├── .env
+│   ├── migrate.json
+│   ├── migrations
+│   │   ├── 1787867796732_create-agents-and-guichets.js
+│   │   ├── 1788080618935_create-service-fiscal.js
+│   │   ├── 1788080708346_create-service-piece.js
+│   │   ├── 1788154712242_create-contribuable.js
+│   │   ├── 1788154869773_create-rendez-vous.js
+│   │   ├── 1789245099717_create-affectation-guichet.js
+│   │   ├── 1789917264851_create-commentaire.js
+│   │   ├── 1790668803874_create-notification-interne-table.js
+│   │   ├── 1791000000000_create-dossier-fiscal.js
+│   │   ├── 1791000000001_create-ticket-file-attente.js
+│   │   ├── 1791000000002_create-type-piece.js
+│   │   ├── 1791000000003_create-piece-justificative.js
+│   │   ├── 1791000000004_create-journal-audit.js
+│   │   ├── 1791000000005_create-notification.js
+│   │   ├── 1791000000006_create-rdv-rappel.js
+│   │   └── 1791000000007_create-traitement.js
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── server.js
+│   ├── src
+│   │   ├── Controllers
+│   │   │   ├── authAgentController.js
+│   │   │   ├── ContribuableController.js
+│   │   │   ├── dossierController.js
+│   │   │   ├── DossierDetailController.js
+│   │   │   ├── guichetController.js
+│   │   │   ├── NotificationController.js
+│   │   │   ├── notificationInterneController.js
+│   │   │   ├── rendezVousController.js
+│   │   │   ├── serviceFiscalController.js
+│   │   │   ├── ServicePieceController.js
+│   │   │   ├── statsController.js
+│   │   │   ├── ticketFileAttenteController.js
+│   │   │   ├── TraitementModel.js
+│   │   │   └── TypePieceController.js
+│   │   ├── DataBases
+│   │   │   └── db.js
+│   │   ├── middleware
+│   │   │   ├── Auth.js
+│   │   │   └── chefAcces.js
+│   │   ├── Models
+│   │   │   ├── AuditModel.js
+│   │   │   ├── CommentaireModel.js
+│   │   │   ├── ContribuableModel.js
+│   │   │   ├── dossierFiscalModel.js
+│   │   │   ├── guichetModel.js
+│   │   │   ├── HistoriqueModel.js
+│   │   │   ├── journalAuditModel.js
+│   │   │   ├── notificationInterneModel.js
+│   │   │   ├── NotificationModel.js
+│   │   │   ├── pieceJustificativeModel.js
+│   │   │   ├── RegisterAgent.js
+│   │   │   ├── rendezVousModel.js
+│   │   │   ├── serviceFiscalModel.js
+│   │   │   ├── ServicePieceModel.js
+│   │   │   ├── ticketFileAttenteModel.js
+│   │   │   ├── TraitementModel.js
+│   │   │   └── TypePieceModel.js
+│   │   ├── Routes
+│   │   │   ├── authAgentRoutes.js
+│   │   │   ├── contribuableRoutes.js
+│   │   │   ├── dailyOps.routes.js
+│   │   │   ├── dossierDetailRoutes.js
+│   │   │   ├── guichetRoutes.js
+│   │   │   ├── NotificationRoute.js
+│   │   │   ├── rendezVousRoutes.js
+│   │   │   ├── serviceFiscalRoute.js
+│   │   │   ├── ServicePieceRoutes.js
+│   │   │   ├── ticketFileAttenteRoutes.js
+│   │   │   └── TypePieceRoutes.js
+│   │   ├── scripts
+│   │   │   ├── runSeedAdmin.js
+│   │   │   └── seedChefService.js
+│   │   ├── Services
+│   │   │   ├── emailService.js
+│   │   │   ├── marquerAbsents.js
+│   │   │   ├── notifyChef.js
+│   │   │   └── rappelsRdv.js
+│   │   ├── Socket
+│   │   │   ├── emitters.js
+│   │   │   └── socket.js
+│   │   └── utils
+│   │       └── token.js
+│   └── uploads
+│       └── dossiers
+│           ├── 1
+│           ├── 10
+│           ├── 11
+│           ├── 12
+│           ├── 13
+│           ├── 14
+│           ├── 15
+│           ├── 16
+│           ├── 17
+│           ├── 18
+│           ├── 19
+│           ├── 2
+│           ├── 20
+│           ├── 21
+│           ├── 22
+│           ├── 23
+│           ├── 24
+│           ├── 25
+│           ├── 3
+│           ├── 4
+│           ├── 5
+│           ├── 7
+│           ├── 8
+│           └── 9
+├── electron
+│   ├── main.js
+│   └── preload.js
+├── .gitignore
+├── index.html
+├── package.json
+├── package-lock.json
+├── public
+│   ├── audio
+│   │   ├── deconnecte.mp3
+│   │   ├── delete.mp3
+│   │   ├── error.mp3
+│   │   ├── loginSuccess.mp3
+│   │   ├── notification1.mp3
+│   │   ├── notification2.mp3
+│   │   ├── notification3.mp3
+│   │   ├── success.mp3
+│   │   ├── update.mp3
+│   │   └── warning.mp3
+│   ├── favicon.svg
+│   ├── icons.svg
+│   └── systeme de sons .txt
+├── README.md
+├── src
+│   ├── AdminView
+│   │   ├── Modal
+│   │   │   ├── AgentDetailModal.vue
+│   │   │   ├── CreateService.vue
+│   │   │   ├── EditChiefProfileModal.vue
+│   │   │   └── RejectAgentModal.vue
+│   │   ├── serviceFiscalListe.vue
+│   │   ├── SupervisionGuichets.vue
+│   │   └── UserPartieViewAdmin.vue
+│   ├── api
+│   │   └── Axios.js
+│   ├── App.vue
+│   ├── assets
+│   │   ├── index.css
+│   │   ├── input.css
+│   │   └── madagascarMap.svg
+│   ├── components
+│   │   ├── Appoitement
+│   │   │   ├── AppNavbar.vue
+│   │   │   ├── AppointmentForm.vue
+│   │   │   ├── AppointmentSummary.vue
+│   │   │   ├── StepperIndicator.vue
+│   │   │   └── TimeSlotPicker.vue
+│   │   ├── Contrubuable
+│   │   │   ├── createDossier.vue
+│   │   │   ├── DossierExtraTabs.vue
+│   │   │   ├── DossiersFiscal.vue
+│   │   │   ├── myAccount.vue
+│   │   │   ├── notifications.vue
+│   │   │   ├── PortalDashboard.vue
+│   │   │   ├── PortalHeader.vue
+│   │   │   ├── priseRendezVous.vue
+│   │   │   ├── rdv
+│   │   │   └── RendezVousListPage.vue
+│   │   ├── DashboardComponents
+│   │   │   ├── ChefCentreDashboard.vue
+│   │   │   ├── dashboardAgent.vue
+│   │   │   ├── Dashboard.vue
+│   │   │   ├── Sidebar.vue
+│   │   │   ├── StatsGrid.vue
+│   │   │   ├── TitleBar.vue
+│   │   │   └── VerificateurDashboard.vue
+│   │   ├── DashboardGuichet
+│   │   │   ├── AppSidebar.vue
+│   │   │   ├── QueueTable.vue
+│   │   │   └── TicketDetailsPanel.vue
+│   │   ├── DeconnectModal.vue
+│   │   ├── DeleteConfirmation.vue
+│   │   ├── Depot
+│   │   │   ├── ActionBar.vue
+│   │   │   ├── DocumentList.vue
+│   │   │   ├── FileUploadZone.vue
+│   │   │   ├── TaxHeader.vue
+│   │   │   └── UploadedFilesTable.vue
+│   │   ├── Dossiers
+│   │   │   ├── ContribuableCard.vue
+│   │   │   ├── createDossiersCotribuable.vue
+│   │   │   ├── DocumentsList.vue
+│   │   │   ├── HistoriqueCard.vue
+│   │   │   ├── modal
+│   │   │   └── VerificationInbox.vue
+│   │   ├── Login
+│   │   │   ├── LoginCard.vue
+│   │   │   ├── PublicFooter.vue
+│   │   │   └── PublicHeader.vue
+│   │   ├── LoginAgent.vue
+│   │   ├── RDV
+│   │   │   ├── createRendezVous.vue
+│   │   │   ├── modal
+│   │   │   └── Navbar.vue
+│   │   ├── Register
+│   │   │   ├── FormInput.vue
+│   │   │   └── RegisterForm.vue
+│   │   ├── Statistique
+│   │   │   ├── agent
+│   │   │   └── contribuable
+│   │   └── verificationEmail.vue
+│   ├── composables
+│   │   ├── useElectron.js
+│   │   ├── useNotifications.js
+│   │   ├── useTraitementTimer.js
+│   │   └── useVoiceAnnouncer.js
+│   ├── contribuable.vue
+│   ├── data
+│   │   ├── appointments.js
+│   │   ├── displayData.js
+│   │   ├── documents.js
+│   │   ├── dossierData.js
+│   │   ├── portalData.js
+│   │   ├── queueData.js
+│   │   └── services.js
+│   ├── .env
+│   ├── main.js
+│   ├── router
+│   │   ├── index.js
+│   │   └── routeContribuable.js
+│   ├── services
+│   │   ├── socket.js
+│   │   └── sonnerie.js
+│   ├── style.css
+│   └── views
+│       ├── contrib
+│       │   ├── Acceuil.vue
+│       │   ├── ContribuableDashboard1.vue
+│       │   ├── ContribuableDashboard.vue
+│       │   ├── LoginViewContrub1.vue
+│       │   ├── LoginViewContrub.vue
+│       │   ├── modal
+│       │   ├── RegisterView.vue
+│       │   └── Rendez-vous ContribList.vue
+│       ├── DasboardAgent.vue
+│       ├── DashboardGuichet.vue
+│       ├── DossierDetailAgent.vue
+│       ├── FilEntente.vue
+│       ├── KioskView.vue
+│       ├── NotFound.vue
+│       ├── PreDepositView.vue
+│       └── RendezVousAgent.vue
+├── structure-projet.txt
+└── vite.config.js
+
+70 directories, 188 files

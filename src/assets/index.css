@@ -1,0 +1,32 @@
+:root {
+    --bg: #f1f5f9;
+    --card: #ffffff;
+    --text: #1e293b;
+    --text-muted: #64748b;
+    --border: #e2e8f0;
+    --sidebar: #ffffff;
+    --titlebar: #1e3a5f;
+    --primary: #3b82f6;
+    --hover: #f8fafc;
+/*Si avoir une liste en card pas card elle meme*/
+
+--bgListCard: rgba(255, 247, 237, 0.75);      /* orange très doux */
+--borderListCard: rgb(254, 215, 170);          /* bordure orange */
+--textListCard: #c2410c;
+}
+
+.dark {
+    --bg: #0f172a;
+    --card: #1e293b;
+    --text: #f1f5f9;
+    --text-muted: #94a3b8;
+    --border: #334155;
+    --sidebar: #1e293b;
+    --titlebar: #0f172a;
+    --primary: #60a5fa;
+    --hover: #334155;
+    /*Si avoir une liste en card pas card elle meme*/ 
+    --bgListCard: rgba(207, 250, 254, 0.12);       /* cyan très transparent */
+    --borderListCard: rgba(103, 232, 249, 0.35);   /* bordure cyan douce */
+    --textListCard: #22d3ee;
+}
