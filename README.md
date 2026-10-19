@@ -15,3 +15,7 @@ Technologie dois utilisee : Vite + Vue.js + Electron + Better-Sqlite(pour les ge
 Lohahevitra: Fandrafetana vavahadin-tserasera fandraisana hybrida mitambatra ny famandrihana fotoana sy ny fandefasana mialoha ny antontan-taratasy hetra nomerika
 
 Olana: Ahoana ny fomba hanamafisana ny fikarakarana eny amin'ny kaontera amin'ny alàlan'ny famelana ny mpandoa hetra hanolotra ny antontan-taratasy fanohanana azy ireo alohan'ny fitsidihana
+
+lancement de projet : 
+
+a la racine execute cette commande : npm install
